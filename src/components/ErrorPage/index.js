@@ -7,7 +7,7 @@ export const ErrorPage = () => {
   element.append(Header());
   element.innerHTML += `
     <main class="container">
-      <p>Tato stránka neexistuje</p>
+      <h1>Tato stránka neexistuje</h1>
     </main>
   `;
   element.append(Footer());
