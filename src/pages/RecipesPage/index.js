@@ -1,7 +1,8 @@
-import { Header } from "../../components/Header/index.js";
-import { Footer } from "../../components/Footer/index.js";
+import { Header } from '../../components/Header/index.js';
+import { Footer } from '../../components/Footer/index.js';
 
-export const RecipesPage = () => {
+export const RecipesPage = (props) => {
+  const { recipes } = props;
   const element = document.createElement('div');
   element.classList.add('page');
   element.append(Header());
@@ -13,4 +14,4 @@ export const RecipesPage = () => {
   `;
   element.append(Footer());
   return element;
-}
+};
